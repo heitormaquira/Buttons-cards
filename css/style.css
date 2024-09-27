@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f3f3f3;
+    font-family: 'Merriweather Sans', sans-serif; /* Adicionando a fonte */
+}
+
+.card {
+    border-radius: 20px; 
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+    height: 130px; /* Altura do card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave para transformações */
+}
+
+.card-body {
+    display: flex; /* Adiciona flex para alinhar horizontalmente */
+    justify-content: space-between; /* Garante que o título fique à esquerda e a imagem à direita */
+    align-items: flex-start; /* Alinha verticalmente o título ao topo */
+}
+
+.card-title {
+    color: #929292; /* Altera a cor do título */
+    margin: 0; /* Remove margem para alinhamento correto */
+    transition: color 0.3s ease; /* Transição suave para a mudança de cor */
+    text-decoration: none; /* Remove sublinhado padrão */
+    font-size: 1.5rem; /* Aumenta o tamanho da fonte do título */
+    font-family: 'Lato', sans-serif; /* Altera a fonte para Lato */
+}
+
+.card-img {
+    border-radius: 0; /* Remove o arredondamento da imagem */
+    width: 130px; /* Ajuste no tamanho da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    transition: transform 0.3s ease; /* Transição suave para a transformação da imagem */
+}
+
+.card:hover {
+    transform: scale(1.02); /* Efeito de aumento suave do card */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Sombra suave ao passar o mouse */
+}
+
+.card:hover .card-title {
+    color: #0041a5; /* Altera a cor do título ao passar o mouse */
+}
+
+.card:hover .card-img {
+    transform: scale(1.05); /* Aumenta a imagem suavemente ao passar o mouse */
+}
