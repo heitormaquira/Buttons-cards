@@ -9,6 +9,12 @@
 body {
     background-color: #f3f3f3;
     font-family: 'Merriweather Sans', sans-serif; /* Adicionando a fonte */
+    overflow-x: hidden; /* Remove a barra lateral se houver overflow horizontal */
+}
+
+.container {
+    max-width: 97%; /* Garante que a largura da container seja 100% */
+    padding: 0; /* Remove o padding da container */
 }
 
 .card {
@@ -35,7 +41,7 @@ body {
 
 .card-img {
     border-radius: 0; /* Remove o arredondamento da imagem */
-    width: 130px; /* Ajuste no tamanho da imagem */
+    width: 100px; /* Ajuste no tamanho da imagem */
     height: auto; /* Mantém a proporção da imagem */
     transition: transform 0.3s ease; /* Transição suave para a transformação da imagem */
 }
