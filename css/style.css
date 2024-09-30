@@ -58,7 +58,7 @@ body {
 }
 
 .card:hover .card-title {
-    color: #0041a5; /* Altera a cor do título ao passar o mouse */
+    color: #0000a0; /* Altera a cor do título ao passar o mouse */
 }
 
 .card:hover .card-img {
